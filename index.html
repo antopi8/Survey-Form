@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/f/xbjqqgln" method="POST">
+        <fieldset>
+            <legend>Survey Form</legend>
+            <label for="name">Name:</label><br>
+            <div class="field"><input id="name" type="text" name="name" autofocus="on" placeholder="Enter a Name" required />
+                <div>
+                    <br>
+                    <label for "age">What is your Age?</label>
+                    <br>
+                    <select name="age" id="age">
+          <option value="18under">Under 18</option>
+          <option value="18 - 25">18-25</option>
+          <option value="26 - 35">26-35</option>
+          <option value="36 - 45">36-45</option>
+          <option value="above 45">Above 46</option>
+        </select>
+                    <br>
+
+                    <label for="email">Email:</label><br>
+                    <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter an Email" />
+
+                    <br>
+
+                    <p>Would you recommend our product to a friend?</p>
+                    <label><div class="radiobuttons"><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</div></label>
+                    <label><div class="radiobuttons"><input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe</div></label>
+                    <label><div class="radiobuttons"><input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</div></label>
+                    <br>
+                    <label for="form-message">Message:</label><br>
+                    <textarea id="form-message" name="message" maxlength="100" rows="10" cols="50" placeholder="Enter Feedback here" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
